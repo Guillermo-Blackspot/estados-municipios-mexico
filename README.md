@@ -30,6 +30,8 @@ _Un paquete de php y javascript de los estados y municipios de mexico, soporta e
 
 ### Quick Sample Html
 
+Funciona como "toggle" al seleccionar un estado se muestran los municipios de este, en el select "#select-municipios-id"
+
 ```html
     <div>
         <select id="select-estados-id">
@@ -51,12 +53,12 @@ _Un paquete de php y javascript de los estados y municipios de mexico, soporta e
          */
         EstadosMunicipiosMexico.mountIn('#select-estados-id','#select-municipios-id')
     </script>
-
 ```
+
 ## Author ✒️
 
 _Guillermo Rodriguez / guillermo.rod.dev@gmail.com_
 
 ## License 📄
 
-This project is under the license (MIT) - Look the file [LICENSE.md](LICENSE.md).
+(MIT) - [LICENSE.md](LICENSE.md).
