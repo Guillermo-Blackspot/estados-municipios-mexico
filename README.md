@@ -30,6 +30,29 @@ _Un paquete de php y javascript de los estados y municipios de mexico, soporta e
 
 ### Quick Sample Html
 
+```html
+    <div>
+        <select id="select-estados-id">
+        </select>
+    </div>
+    <div>
+        <select id="select-municipios-id">
+        </select>
+    </div>
+
+    <script src="./estados_municipios_mexico.js"></script>
+    <script>
+        /**
+         * Cargar los selects con la informacion
+         * @param {String|Element} selectEstados
+         * @param {String|Element} selectMunicipios 
+         * @param {Integer} estadoSeleccionado
+         * @param {Integer} municipioSeleccionado
+         */
+        EstadosMunicipiosMexico.mountIn('#select-estados-id','#select-municipios-id')
+    </script>
+
+```
 ## Author ✒️
 
 _Guillermo Rodriguez / guillermo.rod.dev@gmail.com_
