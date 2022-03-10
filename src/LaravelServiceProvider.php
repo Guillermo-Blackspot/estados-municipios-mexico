@@ -35,7 +35,7 @@ class LaravelServiceProvider extends ServiceProvider
          * Assets js
          */
         $this->publishesToGroups([            
-            __DIR__.'/../dist/estados_municipios_mexico.min.js' => public_path('vendor/estados-municipios-mexico/main.min.js')
+            __DIR__.'/../dist/estados_municipios_mexico.min.js' => public_path('vendor/estados-municipios-mexico/estados_municipios_mexico.min.js')
         ], ['mexico', 'mexico:js']);
     }
 
