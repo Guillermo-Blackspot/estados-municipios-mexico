@@ -3,13 +3,13 @@
 _Un paquete de php y javascript de los estados y municipios de mexico, soporta el comando mexico:publish para laravel_
 
 
-### Install 🔧
+### Instalar 🔧
 
 ```bash
     composer require mmo-and-friends/estados-municipios-mexico
 ```
 
-### Quick Sample Php
+### Ejemplo: Php
 
 ```php
     use MmoAndFriends\Mexico\Mexico;
@@ -28,7 +28,7 @@ _Un paquete de php y javascript de los estados y municipios de mexico, soporta e
     }
 ```
 
-### Quick Sample Html
+### Ejemplo: Html
 
 Funciona como "toggle" al seleccionar un estado se muestran los municipios de este, en el select "#select-municipios-id"
 
@@ -55,10 +55,10 @@ Funciona como "toggle" al seleccionar un estado se muestran los municipios de es
     </script>
 ```
 
-## Author ✒️
+## Autor ✒️
 
 _Guillermo Rodriguez / guillermo.rod.dev@gmail.com_
 
-## License 📄
+## Licencia 📄
 
 (MIT) - [LICENSE.md](LICENSE.md).
