@@ -3,6 +3,7 @@ class EstadosMunicipiosMexico_{
     constructor() {
         this.author  = "Guillermo Rodriguez";
         this.version = "v1.0.0";
+        this.from    = 'Mmo&Friends';
     }
     
     /**
@@ -19,18 +20,18 @@ class EstadosMunicipiosMexico_{
     }
 
     /**
-     * Get the countries like html options
+     * Get the states like html options
      * @param {Integer|null} selected 
      * @returns {String}
      */
-    getCountries(selected){
-        let countries      ="1|Aguascalientes;2|Baja California;3|Baja California Sur;4|Campeche;5|Coahuila de Zaragoza;6|Colima;7|Chiapas;8|Chihuahua;9|Distrito Federal;10|Durango;11|Guanajuato;12|Guerrero;13|Hidalgo;14|Jalisco;15|M\u00e9xico;16|Michoac\u00e1n de Ocampo;17|Morelos;18|Nayarit;19|Nuevo Le\u00f3n;20|Oaxaca;21|Puebla;22|Quer\u00e9taro;23|Quintana Roo;24|San Luis Potos\u00ed;25|Sinaloa;26|Sonora;27|Tabasco;28|Tamaulipas;29|Tlaxcala;30|Veracruz de Ignacio de la Llave;31|Yucat\u00e1n;32|Zacatecas".split(";");
-        let totalcountries = countries.length;
-        let i              = 0;
-        let options        = selected ? '' : `<option value="">-- Seleccionar --</option>`;
+    getStates(selected){
+        let states      ="1|Aguascalientes;2|Baja California;3|Baja California Sur;4|Campeche;5|Coahuila de Zaragoza;6|Colima;7|Chiapas;8|Chihuahua;9|Distrito Federal;10|Durango;11|Guanajuato;12|Guerrero;13|Hidalgo;14|Jalisco;15|M\u00e9xico;16|Michoac\u00e1n de Ocampo;17|Morelos;18|Nayarit;19|Nuevo Le\u00f3n;20|Oaxaca;21|Puebla;22|Quer\u00e9taro;23|Quintana Roo;24|San Luis Potos\u00ed;25|Sinaloa;26|Sonora;27|Tabasco;28|Tamaulipas;29|Tlaxcala;30|Veracruz de Ignacio de la Llave;31|Yucat\u00e1n;32|Zacatecas".split(";");
+        let totalStates = states.length;
+        let i           = 0;
+        let options     = selected ? '' : `<option value="">-- Seleccionar --</option>`;
 
-        for (countries, totalcountries , i; i < totalcountries; i++) {
-            const [value, label] = countries[i].split("|");
+        for (states, totalStates , i; i < totalStates; i++) {
+            const [value, label] = states[i].split("|");
             options += `<option value="${value}" ${selected == value ? 'selected="selected"':''} >${label}</option>`;
         }
        
@@ -167,21 +168,21 @@ class EstadosMunicipiosMexico_{
 
     /**
      * Mount the options in the selectes
-     * @param {String|Element} selC 
+     * @param {String|Element} selS 
      * @param {String|Element} selM 
-     * @param {Integer} selectedC
+     * @param {Integer} selectedS
      * @param {Integer} selectedM
      */
-    mountIn(selC, selM, selectedC, selectedM){
+    mountIn(selS, selM, selectedS, selectedM){
 
-        selC = this.parseTarget(selC);
+        selS = this.parseTarget(selS);
         selM = this.parseTarget(selM);
-        selC.innerHTML = this.getCountries();
+        selS.innerHTML = this.getStates();
         selM.innerHTML = this.getMunicipalities(
-            this.getMunicipalitiesOfCountryFromString(selectedC), selectedM
+            this.getMunicipalitiesOfCountryFromString(selectedS), selectedM
         );
 
-        selC.addEventListener('change', ({target}) => {        
+        selS.addEventListener('change', ({target}) => {        
             let countryValue = target.value;
             selM.innerHTML = this.getMunicipalities(this.getMunicipalitiesOfCountryFromString(countryValue));
         });
