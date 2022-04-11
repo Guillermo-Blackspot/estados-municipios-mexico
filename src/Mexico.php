@@ -99,7 +99,7 @@ class Mexico{
             $a = "17|Comond\u00fa;18|Muleg\u00e9;19|La Paz;20|Los Cabos;21|Loreto";
         }
         else if($countryValue == 4 || $countryValue == 'Campeche'){
-            $a = "22|Calkin\u00ed 23|Campeche 24|Carmen 25|Champot\u00f3n 26|Hecelchak\u00e1n 27|Hopelch\u00e9n 28|Palizada 29|Tenabo 30|Esc\u00e1rcega 31|Calakmul 32|Candelaria".split(" ");
+            $a = "22|Calkin\u00ed;23|Campeche;24|Carmen;25|Champot\u00f3n;26|Hecelchak\u00e1n;27|Hopelch\u00e9n;28|Palizada;29|Tenabo;30|Esc\u00e1rcega;31|Calakmul;32|Candelaria";
         }
         else if($countryValue == 5 || $countryValue == 'Coahuila de Zaragoza'){
             $a = "33|Abasolo;34|Acu\u00f1a;35|Allende;36|Arteaga;37|Candela;38|Casta\u00f1os;39|Cuatro Ci\u00e9negas;40|Escobedo;41|Francisco I. Madero;42|Frontera;43|General Cepeda;44|Guerrero;45|Hidalgo;46|Jim\u00e9nez;47|Ju\u00e1rez;48|Lamadrid;49|Matamoros;50|Monclova;51|Morelos;52|M\u00fazquiz;53|Nadadores;54|Nava;55|Ocampo;56|Parras;57|Piedras Negras;58|Progreso;59|Ramos Arizpe;60|Sabinas;61|Sacramento;62|Saltillo;63|San Buenaventura;64|San Juan de Sabinas;65|San Pedro;66|Sierra Mojada;67|Torre\u00f3n;68|Viesca;69|Villa Uni\u00f3n;70|Zaragoza";
