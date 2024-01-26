@@ -51,7 +51,9 @@ class Mexico{
      * @return array
      */
     public static function getStates($type = 'object'){
-        $countries = "1|Aguascalientes;2|Baja California;3|Baja California Sur;4|Campeche;5|Coahuila de Zaragoza;6|Colima;7|Chiapas;8|Chihuahua;9|Distrito Federal;10|Durango;11|Guanajuato;12|Guerrero;13|Hidalgo;14|Jalisco;15|M\u00e9xico;16|Michoac\u00e1n de Ocampo;17|Morelos;18|Nayarit;19|Nuevo Le\u00f3n;20|Oaxaca;21|Puebla;22|Quer\u00e9taro;23|Quintana Roo;24|San Luis Potos\u00ed;25|Sinaloa;26|Sonora;27|Tabasco;28|Tamaulipas;29|Tlaxcala;30|Veracruz de Ignacio de la Llave;31|Yucat\u00e1n;32|Zacatecas";
+        // "Distrito Federal" was changed to "Ciudad de M\u00e9xico"
+
+        $countries = "1|Aguascalientes;2|Baja California;3|Baja California Sur;4|Campeche;5|Coahuila de Zaragoza;6|Colima;7|Chiapas;8|Chihuahua;9|Ciudad de M\u00e9xico;10|Durango;11|Guanajuato;12|Guerrero;13|Hidalgo;14|Jalisco;15|M\u00e9xico;16|Michoac\u00e1n de Ocampo;17|Morelos;18|Nayarit;19|Nuevo Le\u00f3n;20|Oaxaca;21|Puebla;22|Quer\u00e9taro;23|Quintana Roo;24|San Luis Potos\u00ed;25|Sinaloa;26|Sonora;27|Tabasco;28|Tamaulipas;29|Tlaxcala;30|Veracruz de Ignacio de la Llave;31|Yucat\u00e1n;32|Zacatecas";
         $exp       = explode(';', $countries);
         $result    = [];
         for ($i=0; $i < count($exp) ; $i++) { 
@@ -113,7 +115,7 @@ class Mexico{
         else if($countryValue == 8 || $countryValue == 'Chihuahua'){
             $a = "199|Ahumada;200|Aldama;201|Allende;202|Aquiles Serd\u00e1n;203|Ascensi\u00f3n;204|Bach\u00edniva;205|Balleza;206|Batopilas;207|Bocoyna;208|Buenaventura;209|Camargo;210|Carich\u00ed;211|Casas Grandes;212|Coronado;213|Coyame del Sotol;214|La Cruz;215|Cuauht\u00e9moc;216|Cusihuiriachi;217|Chihuahua;218|Ch\u00ednipas;219|Delicias;220|Dr. Belisario Dom\u00ednguez;221|Galeana;222|Santa Isabel;223|G\u00f3mez Far\u00edas;224|Gran Morelos;225|Guachochi;226|Guadalupe;227|Guadalupe y Calvo;228|Guazapares;229|Guerrero;230|Hidalgo del Parral;231|Huejotit\u00e1n;232|Ignacio Zaragoza;233|Janos;234|Jim\u00e9nez;235|Ju\u00e1rez;236|Julimes;237|L\u00f3pez;238|Madera;239|Maguarichi;240|Manuel Benavides;241|Matach\u00ed;242|Matamoros;243|Meoqui;244|Morelos;245|Moris;246|Namiquipa;247|Nonoava;248|Nuevo Casas Grandes;249|Ocampo;250|Ojinaga;251|Praxedis G. Guerrero;252|Riva Palacio;253|Rosales;254|Rosario;255|San Francisco de Borja;256|San Francisco de Conchos;257|San Francisco del Oro;258|Santa B\u00e1rbara;259|Satev\u00f3;260|Saucillo;261|Tem\u00f3sachic;262|El Tule;263|Urique;264|Uruachi;265|Valle de Zaragoza";
         }
-        else if($countryValue == 9 || $countryValue == 'Distrito Federal'){
+        else if($countryValue == 9 || $countryValue == 'Distrito Federal' || $countryValue == 'Ciudad de M\u00e9xico' || $countryValue == 'Ciudad de México'){
             $a = "266|Azcapotzalco;267|Coyoac\u00e1n;268|Cuajimalpa de Morelos;269|Gustavo A. Madero;270|Iztacalco;271|Iztapalapa;272|La Magdalena Contreras;273|Milpa Alta;274|\u00c1lvaro Obreg\u00f3n;275|Tl\u00e1huac;276|Tlalpan;277|Xochimilco;278|Benito Ju\u00e1rez;279|Cuauht\u00e9moc;280|Miguel Hidalgo;281|Venustiano Carranza";
         }
         else if($countryValue == 10 || $countryValue == 'Durango'){

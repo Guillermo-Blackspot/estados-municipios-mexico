@@ -25,7 +25,8 @@ class EstadosMunicipiosMexico_{
      * @returns {String}
      */
     getStates(selected){
-        let states      ="1|Aguascalientes;2|Baja California;3|Baja California Sur;4|Campeche;5|Coahuila de Zaragoza;6|Colima;7|Chiapas;8|Chihuahua;9|Distrito Federal;10|Durango;11|Guanajuato;12|Guerrero;13|Hidalgo;14|Jalisco;15|M\u00e9xico;16|Michoac\u00e1n de Ocampo;17|Morelos;18|Nayarit;19|Nuevo Le\u00f3n;20|Oaxaca;21|Puebla;22|Quer\u00e9taro;23|Quintana Roo;24|San Luis Potos\u00ed;25|Sinaloa;26|Sonora;27|Tabasco;28|Tamaulipas;29|Tlaxcala;30|Veracruz de Ignacio de la Llave;31|Yucat\u00e1n;32|Zacatecas".split(";");
+        // "Distrito Federal" was changed to "Ciudad de M\u00e9xico"
+        let states      ="1|Aguascalientes;2|Baja California;3|Baja California Sur;4|Campeche;5|Coahuila de Zaragoza;6|Colima;7|Chiapas;8|Chihuahua;9|Ciudad de M\u00e9xico;10|Durango;11|Guanajuato;12|Guerrero;13|Hidalgo;14|Jalisco;15|M\u00e9xico;16|Michoac\u00e1n de Ocampo;17|Morelos;18|Nayarit;19|Nuevo Le\u00f3n;20|Oaxaca;21|Puebla;22|Quer\u00e9taro;23|Quintana Roo;24|San Luis Potos\u00ed;25|Sinaloa;26|Sonora;27|Tabasco;28|Tamaulipas;29|Tlaxcala;30|Veracruz de Ignacio de la Llave;31|Yucat\u00e1n;32|Zacatecas".split(";");
         let totalStates = states.length;
         let i           = 0;
         let options     = selected ? '' : `<option value="">-- Seleccionar --</option>`;
